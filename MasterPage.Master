@@ -54,6 +54,11 @@
                 <a href="#"><i class="fa fa-users"></i>O autorach</a>
             </div>
         </div>
+        <asp:Panel ID="MainPanel" runat="server" BackColor="#654062" Height="300px" HorizontalAlign="Center">
+            <asp:Image ID="LogoImage" runat="server" Height="196px" ImageUrl="~/Images/logo.png" Width="200px" />
+            <br />
+            <asp:Label ID="PageTitleLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" ForeColor="#F4F4F4" Text="Twój Prezent - gotowe zestawy prezentowe"></asp:Label>
+        </asp:Panel>
     </form>
 </body>
 </html>
