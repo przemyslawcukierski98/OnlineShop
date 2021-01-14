@@ -4,16 +4,55 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Master Page</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+             background-color: #000;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+            <div class="navbar">
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Strona główna</a>
+                <a href="#"><i class="fa fa-fw fa-search"></i>Cennik</a>
+                <a href="#"><i class="fa fa-user-o"></i>Rejestracja</a>
+                <a href="#"><i class="fa fa-user-circle-o"></i>Logowanie</a>
+                <a href="#"><i class="fa fa-cogs"></i>Konfiguracja</a>
+                <a href="#"><i class="fa fa-users"></i>O autorach</a>
+            </div>
         </div>
     </form>
 </body>
