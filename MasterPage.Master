@@ -40,14 +40,12 @@
         }
     </style>
 </head>
-<body>
+<body style="height: 336px">
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
             <div class="navbar">
                 <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Strona główna</a>
-                <a href="#"><i class="fa fa-fw fa-search"></i>Cennik</a>
+                <a href="Cennik.aspx"><i class="fa fa-fw fa-search"></i>Cennik</a>
                 <a href="#"><i class="fa fa-user-o"></i>Rejestracja</a>
                 <a href="#"><i class="fa fa-user-circle-o"></i>Logowanie</a>
                 <a href="#"><i class="fa fa-cogs"></i>Konfiguracja</a>
@@ -59,6 +57,10 @@
             <br />
             <asp:Label ID="PageTitleLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" ForeColor="#F4F4F4" Text="Twój Prezent - gotowe zestawy prezentowe"></asp:Label>
         </asp:Panel>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+        </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

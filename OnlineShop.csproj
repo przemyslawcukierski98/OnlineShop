@@ -70,6 +70,7 @@
     <Content Include="Cennik.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\myPhoto.jpg" />
     <Content Include="Konfiguracja.aspx" />
     <Content Include="Logowanie.aspx" />
     <Content Include="MainPage.aspx" />
