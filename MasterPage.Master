@@ -44,7 +44,7 @@
     <form id="form1" runat="server">
         <div>
             <div class="navbar">
-                <a class="active" href="#"><i class="fa fa-fw fa-home"></i>Strona główna</a>
+                <a class="active" href="MainPage.aspx"><i class="fa fa-fw fa-home"></i>Strona główna</a>
                 <a href="Cennik.aspx"><i class="fa fa-fw fa-search"></i>Cennik</a>
                 <a href="Rejestracja.aspx"><i class="fa fa-user-o"></i>Rejestracja</a>
                 <a href="Logowanie.aspx"><i class="fa fa-user-circle-o"></i>Logowanie</a>
