@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Cennik.aspx.cs" Inherits="OnlineShop.Cennik" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Panel ID="CennikPanel" runat="server" BackColor="#E8EAE6" Height="1734px" HorizontalAlign="Center">
+    <asp:Panel ID="CennikPanel" runat="server" BackColor="#E8EAE6" Height="1742px" HorizontalAlign="Center">
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([GroupName] = @GroupName)" DeleteCommand="DELETE FROM [Products] WHERE [ProductId] = @ProductId" InsertCommand="INSERT INTO [Products] ([ProductId], [Name], [Price], [Descirption], [ImageUri], [GroupName]) VALUES (@ProductId, @Name, @Price, @Descirption, @ImageUri, @GroupName)" UpdateCommand="UPDATE [Products] SET [Name] = @Name, [Price] = @Price, [Descirption] = @Descirption, [ImageUri] = @ImageUri, [GroupName] = @GroupName WHERE [ProductId] = @ProductId">
             <DeleteParameters>
@@ -50,7 +50,7 @@
                 <asp:BoundField DataField="Name" HeaderText="Nazwa" SortExpression="Name" />
                 <asp:BoundField DataField="Price" HeaderText="Cena" SortExpression="Price" />
                 <asp:BoundField DataField="Descirption" HeaderText="Opis produktu" SortExpression="Descirption" />
-                <asp:BoundField DataField="ImageUri" SortExpression="ImageUri" Visible="False" />
+                <asp:BoundField DataField="ImageUri" SortExpression="ImageUri" HeaderText="Zdjęcie" />
                 <asp:BoundField DataField="GroupName" HeaderText="GroupName" SortExpression="GroupName" Visible="False" />
             </Columns>
             <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
@@ -82,10 +82,10 @@
             <br />
             <br />
             <br />
-            <asp:Label ID="DescriptionLabel" runat="server" Font-Names="Javanese Text" Font-Size="Medium" ForeColor="#944E6C" Text="opis produktu"></asp:Label>
+            <asp:Label ID="DescriptionLabel" runat="server" Font-Names="Times New Roman" Font-Size="Medium" ForeColor="#944E6C" Text="opis produktu" Font-Bold="False" Font-Italic="False"></asp:Label>
             <br />
             <br />
-            <asp:Label ID="PriceLabel" runat="server" Font-Names="Javanese Text" Font-Size="X-Large" ForeColor="#6600FF" Text="cena"></asp:Label>
+            <asp:Label ID="PriceLabel" runat="server" Font-Names="Javanese Text" Font-Size="X-Large" ForeColor="#6600FF" Text="cena" Font-Bold="True"></asp:Label>
             <br />
             <br />
             <br />
@@ -102,4 +102,17 @@
     </asp:Panel>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    <asp:Panel ID="FooterPanel" runat="server" BackColor="#654062" Height="250px" HorizontalAlign="Center" style="margin-top: 0px">
+        <br />
+        <asp:Label ID="PageTitleLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" ForeColor="#F4F4F4" Text="Skontaktuj się z nami!"></asp:Label>
+        <br />
+        <asp:Label ID="PageTitleLabel0" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="Large" ForeColor="#F4F4F4" Text="adres: ul. Mieszka I 14, 67-320 Małomice"></asp:Label>
+        <br />
+        <asp:Label ID="PageTitleLabel1" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="Large" ForeColor="#F4F4F4" Text="telefon: 881 052 365"></asp:Label>
+        <br />
+        <asp:Label ID="PageTitleLabel2" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="Large" ForeColor="#F4F4F4" Text="e-mail: kontakt@twojprezent.pl"></asp:Label>
+        <br />
+
+        <br />
+    </asp:Panel>
 </asp:Content>

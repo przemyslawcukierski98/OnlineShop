@@ -35,11 +35,13 @@ namespace OnlineShop
             string name = ProductsGridView.SelectedRow.Cells[2].Text;
             string price = ProductsGridView.SelectedRow.Cells[3].Text;
             string description = ProductsGridView.SelectedRow.Cells[4].Text;
+            string imageUri = "~/Images/Products/" + ProductsGridView.SelectedRow.Cells[5].Text + ".png";
 
             NameOfProductLabel.Text = name;
             PriceLabel.Text = price + " PLN";
             DescriptionLabel.Text = description;
             CategoriesLabel.Text = GroupDropDown.SelectedValue;
+            ProductImage.ImageUrl = imageUri;
         }
     }
 }

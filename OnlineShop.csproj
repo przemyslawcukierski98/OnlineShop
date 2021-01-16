@@ -75,6 +75,10 @@
     <Content Include="Global.asax" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\myPhoto.jpg" />
+    <Content Include="Images\Products\kinder max.png" />
+    <Content Include="Images\Products\kinder mini.png" />
+    <Content Include="Images\Products\milka max.png" />
+    <Content Include="Images\Products\milka mini.png" />
     <Content Include="Konfiguracja.aspx" />
     <Content Include="Logowanie.aspx" />
     <Content Include="MainPage.aspx" />
@@ -148,7 +152,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\Products\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
