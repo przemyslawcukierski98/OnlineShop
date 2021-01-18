@@ -30,13 +30,14 @@
         <br />
         <asp:Label ID="OAutorachTitle" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" Text="Cennik"></asp:Label>
         <br />
+        <br />
         <asp:Label ID="CategoriesLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Wybierz kategorię:"></asp:Label>
         <br />
         <br />
         <asp:DropDownList ID="GroupDropDown" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="Name" style="margin-left: 0px" Width="379px">
         </asp:DropDownList>
         &nbsp;&nbsp;
-        <asp:Button ID="ChooseButton" runat="server" BackColor="#654062" BorderStyle="None" Font-Bold="True" Font-Names="Gabriola" Font-Size="Large" ForeColor="White" Height="60px" Text="Wybierz" Width="125px" />
+        <asp:Button ID="ChooseButton" runat="server" BackColor="#654062" BorderStyle="Solid" Font-Bold="False" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Height="45px" Text="Wybierz" Width="120px" />
         <br />
         <br />
         <br />
@@ -64,9 +65,17 @@
             <SortedDescendingHeaderStyle BackColor="#33276A" />
         </asp:GridView>
         <br />
+        <asp:GridView ID="GridViewPom" runat="server" Visible="False">
+        </asp:GridView>
         <br />
-        <asp:Label ID="ProductsDetailsLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Szczegóły wybranego produktu:"></asp:Label>
+        <asp:Label ID="ProductsDetailsLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Wyszukaj produkt:"></asp:Label>
         <br />
+        <br />
+        <asp:TextBox ID="SearchProductTextbox" runat="server" Height="30px" Width="500px"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:Button ID="Button1" runat="server" BackColor="#654062" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Height="43px" OnClick="Button1_Click" Text="Szukaj" Width="112px" />
         <br />
         <br />
         <br />
@@ -78,7 +87,7 @@
             <asp:Label ID="NameOfCategoryLabel" runat="server" Font-Names="Javanese Text" Font-Size="X-Large" ForeColor="#944E6C" Text="kategoria" Font-Bold="True"></asp:Label>
             <br />
             <br />
-            <asp:Image ID="ProductImage" runat="server" Height="312px" Width="340px" />
+            <asp:Image ID="ProductImage" runat="server" Height="312px" Width="340px" BorderStyle="Solid" ForeColor="#6600FF" />
             <br />
             <br />
             <br />
@@ -102,7 +111,7 @@
     </asp:Panel>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-    <asp:Panel ID="FooterPanel" runat="server" BackColor="#654062" Height="250px" HorizontalAlign="Center" style="margin-top: 0px">
+    <asp:Panel ID="FooterPanel" runat="server" BackColor="#654062" Height="250px" HorizontalAlign="Center" style="margin-top: 105px">
         <br />
         <asp:Label ID="PageTitleLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" ForeColor="#F4F4F4" Text="Skontaktuj się z nami!"></asp:Label>
         <br />

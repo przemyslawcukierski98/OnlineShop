@@ -96,6 +96,15 @@ namespace OnlineShop
         protected global::System.Web.UI.WebControls.GridView ProductsGridView;
 
         /// <summary>
+        /// Kontrolka GridViewPom.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewPom;
+
+        /// <summary>
         /// Kontrolka ProductsDetailsLabel.
         /// </summary>
         /// <remarks>
@@ -103,6 +112,24 @@ namespace OnlineShop
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label ProductsDetailsLabel;
+
+        /// <summary>
+        /// Kontrolka SearchProductTextbox.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox SearchProductTextbox;
+
+        /// <summary>
+        /// Kontrolka Button1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// Kontrolka ProductDetailsPanel.
