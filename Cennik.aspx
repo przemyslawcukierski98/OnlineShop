@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Cennik.aspx.cs" Inherits="OnlineShop.Cennik" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Panel ID="CennikPanel" runat="server" BackColor="#E8EAE6" Height="1742px" HorizontalAlign="Center">
+    <asp:Panel ID="CennikPanel" runat="server" BackColor="#E8EAE6" Height="1900px" HorizontalAlign="Center">
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([GroupName] = @GroupName)" DeleteCommand="DELETE FROM [Products] WHERE [ProductId] = @ProductId" InsertCommand="INSERT INTO [Products] ([ProductId], [Name], [Price], [Descirption], [ImageUri], [GroupName]) VALUES (@ProductId, @Name, @Price, @Descirption, @ImageUri, @GroupName)" UpdateCommand="UPDATE [Products] SET [Name] = @Name, [Price] = @Price, [Descirption] = @Descirption, [ImageUri] = @ImageUri, [GroupName] = @GroupName WHERE [ProductId] = @ProductId">
             <DeleteParameters>
@@ -79,7 +79,7 @@
         <br />
         <br />
         <br />
-        <asp:Panel ID="ProductDetailsPanel" runat="server" Height="759px" BackColor="#E9C496">
+        <asp:Panel ID="ProductDetailsPanel" runat="server" Height="753px" BackColor="#E9C496" Visible="False">
             <br />
             <br />
             <asp:Label ID="NameOfProductLabel" runat="server" Font-Names="Javanese Text" Font-Size="X-Large" Text="nazwa produktu" Font-Bold="True" ForeColor="#433D3C"></asp:Label>

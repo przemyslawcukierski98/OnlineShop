@@ -42,6 +42,8 @@ namespace OnlineShop
             DescriptionLabel.Text = description;
             CategoriesLabel.Text = GroupDropDown.SelectedValue;
             ProductImage.ImageUrl = imageUri;
+
+            ProductDetailsPanel.Visible = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -65,13 +67,15 @@ namespace OnlineShop
             string name = GridViewPom.Rows[0].Cells[1].Text;
             string price = GridViewPom.Rows[0].Cells[2].Text;
             string description = GridViewPom.Rows[0].Cells[3].Text;
-            string imageUri = "~/Images/Products/" + ProductsGridView.Rows[0].Cells[4].Text + ".png";
+            string imageUri = "~/Images/Products/" + ProductsGridView.Rows[0].Cells[5].Text + ".png";
 
             NameOfProductLabel.Text = name;
             PriceLabel.Text = price + " PLN";
             DescriptionLabel.Text = description;
             CategoriesLabel.Text = GroupDropDown.SelectedValue;
             ProductImage.ImageUrl = imageUri;
+
+            ProductDetailsPanel.Visible = true;
         }
     }
 }
