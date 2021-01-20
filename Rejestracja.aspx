@@ -8,7 +8,7 @@
         <br />
         <asp:Label ID="ImieLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Imię:"></asp:Label>
         <br />
-        <asp:TextBox ID="ImieTextbox" runat="server" Height="35px" TextMode="Email" Width="350px"></asp:TextBox>
+        <asp:TextBox ID="ImieTextbox" runat="server" Height="35px" Width="350px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="ImieValidationLabel" runat="server" ForeColor="Red" Text="Pole &quot;imię&quot; nie może pozostać puste" Visible="False"></asp:Label>
@@ -26,7 +26,7 @@
         <asp:Label ID="LoginLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Login użytkownika:"></asp:Label>
         <br />
         <br />
-        <asp:TextBox ID="LoginTextbox" runat="server" Height="35px" TextMode="Password" Width="351px"></asp:TextBox>
+        <asp:TextBox ID="LoginTextbox" runat="server" Height="35px" Width="351px"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="LoginValidationLabel" runat="server" ForeColor="Red" Text="Pole &quot;login użytkownika&quot; nie może pozostać puste" Visible="False"></asp:Label>
@@ -44,7 +44,7 @@
         <br />
         <br />
         <br />
-        <asp:Button ID="RegistrationButton" runat="server" BackColor="#654062" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Height="45px" Text="Zarejestruj się" />
+        <asp:Button ID="RegistrationButton" runat="server" BackColor="#654062" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Height="45px" Text="Zarejestruj się" OnClick="RegistrationButton_Click" />
     </asp:Panel>
 
 </asp:Content>
