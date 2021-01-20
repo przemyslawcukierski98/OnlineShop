@@ -23,7 +23,7 @@
         <br />
         <br />
         <br />
-        <asp:Button ID="LoginButton" runat="server" BackColor="#654062" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Text="Zaloguj się" />
+        <asp:Button ID="LoginButton" runat="server" BackColor="#654062" Font-Names="Arial" Font-Size="Medium" ForeColor="White" Text="Zaloguj się" OnClick="LoginButton_Click" />
         <br />
         <br />
     </asp:Panel>
