@@ -21,7 +21,7 @@
     <br />
     <asp:Label ID="OAutorachDescriptionLabel2" runat="server" Font-Bold="False" Font-Names="Gabriola" Font-Size="X-Large" Text="Grupa laboratoryjna: 31 INFSP-PSI/A"></asp:Label>
     <br />
-    <asp:Label ID="OAutorachDescriptionLabel3" runat="server" Font-Bold="False" Font-Names="Gabriola" Font-Size="X-Large" Text="Data oddania zadania: 19/01/2021 r."></asp:Label>
+    <asp:Label ID="OAutorachDescriptionLabel3" runat="server" Font-Bold="False" Font-Names="Gabriola" Font-Size="X-Large" Text="Data oddania zadania: 20/01/2021 r."></asp:Label>
     <br />
     <br />
     <br />
