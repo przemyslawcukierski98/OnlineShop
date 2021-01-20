@@ -30,7 +30,7 @@ namespace OnlineShop
 
             if(dataReader.HasRows)
             {
-                Response.Redirect("Cennik.aspx");
+                Session["Zalogowano"] = 1;
             }
             else
             {

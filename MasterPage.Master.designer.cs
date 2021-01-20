@@ -33,6 +33,15 @@ namespace OnlineShop
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Kontrolka MenuPanel.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel MenuPanel;
+
+        /// <summary>
         /// Kontrolka MainPanel.
         /// </summary>
         /// <remarks>

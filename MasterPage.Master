@@ -40,22 +40,29 @@
         }
     </style>
 </head>
-<body style="height: 336px">
+<body style="height: 345px">
     <form id="form1" runat="server">
-        <div>
-            <div class="navbar">
-                <a class="active" href="MainPage.aspx"><i class="fa fa-fw fa-home"></i>Strona główna</a>
-                <a href="Cennik.aspx"><i class="fa fa-fw fa-search"></i>Cennik</a>
-                <a href="Rejestracja.aspx"><i class="fa fa-user-o"></i>Rejestracja</a>
-                <a href="Logowanie.aspx"><i class="fa fa-user-circle-o"></i>Logowanie</a>
-                <a href="Konfiguracja.aspx"><i class="fa fa-cogs"></i>Konfiguracja</a>
-                <a href="OAutorach.aspx"><i class="fa fa-users"></i>O autorach</a>
-            </div>
-        </div>
-        <asp:Panel ID="MainPanel" runat="server" BackColor="#654062" Height="300px" HorizontalAlign="Center">
+                <asp:Panel ID="MenuPanel" runat="server" Visible="True">
+                    <div>
+                        <div class="navbar">
+                            <a class="active" href="MainPage.aspx"><i class="fa fa-fw fa-home"></i>Strona główna</a>
+                            <a href="Cennik.aspx"><i class="fa fa-fw fa-search"></i>Cennik</a>
+                            <a href="Rejestracja.aspx"><i class="fa fa-user-o"></i>Rejestracja</a>
+                            <a href="Logowanie.aspx"><i class="fa fa-user-circle-o"></i>Logowanie</a>
+                            <a href="Konfiguracja.aspx"><i class="fa fa-cogs"></i>Konfiguracja</a>
+                            <a href="OAutorach.aspx"><i class="fa fa-users"></i>O autorach</a>
+                        </div>
+                    </div>
+                </asp:Panel>
+        <asp:Panel ID="MainPanel" runat="server" BackColor="#654062" Height="336px" HorizontalAlign="Center">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Image ID="LogoImage" runat="server" Height="196px" ImageUrl="~/Images/logo.png" Width="200px" />
             <br />
             <asp:Label ID="PageTitleLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" ForeColor="#F4F4F4" Text="Twój Prezent - gotowe zestawy prezentowe"></asp:Label>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </asp:Panel>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
         </asp:ContentPlaceHolder>

@@ -11,7 +11,7 @@ namespace OnlineShop
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ((int)Session["Zalogowano"] == 0) Response.Redirect("Logowanie.aspx");
         }
     }
 }

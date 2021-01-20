@@ -18,7 +18,9 @@ namespace OnlineShop
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!Page.IsPostBack)
+            if ((int)Session["Zalogowano"] == 0) Response.Redirect("Logowanie.aspx");
+
+            if (!Page.IsPostBack)
             {
                 connection.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
                 connection.Open();
@@ -76,6 +78,12 @@ namespace OnlineShop
             ProductImage.ImageUrl = imageUri;
 
             ProductDetailsPanel.Visible = true;
+        }
+
+        protected void LogoutButton_Click(object sender, EventArgs e)
+        {
+            Session["Zalogowano"] = 0;
+            Response.Redirect("Logowanie.aspx");
         }
     }
 }

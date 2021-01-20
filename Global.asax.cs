@@ -27,7 +27,6 @@ namespace OnlineShop
 
         protected void Session_End(object sender, EventArgs e)
         {
-            //zakonczenie sesji. Zmniejszenie licznika połączeń.
             Application["LiczbaPolaczen"] = (int)Application["LiczbaPolaczen"] - 1;
         }
     }
