@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Logowanie.aspx.cs" Inherits="OnlineShop.Logowanie" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     
-    <asp:Panel ID="LoginPanel" runat="server" HorizontalAlign="Center">
+    <asp:Panel ID="LoginPanel" runat="server" HorizontalAlign="Center" Height="549px">
         <asp:Label ID="RejestracjaTitle" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" Text="Logowanie"></asp:Label>
         <br />
         <br />

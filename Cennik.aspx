@@ -54,7 +54,7 @@
                 <asp:BoundField DataField="Name" HeaderText="Nazwa" SortExpression="Name" />
                 <asp:BoundField DataField="Price" HeaderText="Cena" SortExpression="Price" />
                 <asp:BoundField DataField="Descirption" HeaderText="Opis produktu" SortExpression="Descirption" />
-                <asp:BoundField DataField="ImageUri" SortExpression="ImageUri" HeaderText="Zdjęcie" Visible="False" />
+                <asp:BoundField DataField="ImageUri" SortExpression="ImageUri" HeaderText="Zdjęcie" />
                 <asp:BoundField DataField="GroupName" HeaderText="GroupName" SortExpression="GroupName" Visible="False" />
             </Columns>
             <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
