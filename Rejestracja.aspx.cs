@@ -29,16 +29,25 @@ namespace OnlineShop
             Regex hasNumber = new Regex(@"[0-9]+");
             Regex hasUpperChar = new Regex(@"[A-Z]+");
             bool passwordValidation = hasNumber.IsMatch(password) && hasUpperChar.IsMatch(password);
-            bool firstNameIsEmpty = ImieTextbox.Text.Equals(null);
-            bool lastNameIsEmpty = NazwiskoTextbox.Text.Equals(null);
-            bool loginIsEmpty = LoginTextbox.Text.Equals(null);
-            bool passwordIsEmpty = PasswordTextbox.Text.Equals(null);
+            bool firstNameIsEmpty = ImieTextbox.Text.Equals("");
+            bool lastNameIsEmpty = NazwiskoTextbox.Text.Equals("");
+            bool loginIsEmpty = LoginTextbox.Text.Equals("");
+            bool passwordIsEmpty = PasswordTextbox.Text.Equals("");
             int lengthOfLogin = LoginTextbox.Text.Length;
 
-            if (passwordValidation && lengthOfLogin < 50)
+            ImieValidationLabel.Visible = false;
+            NazwiskoValidationLabel.Visible = false;
+            PasswordValidationLabel.Visible = false;
+            LoginValidationLabel.Visible = false;
+            CorrectValidationLabel.Visible = false;
+            
+
+            if (passwordValidation && lengthOfLogin < 50 && !firstNameIsEmpty && !lastNameIsEmpty 
+                && !loginIsEmpty && !passwordIsEmpty)
             {
-                PasswordValidationLabel.Visible = false;
+                /* PasswordValidationLabel.Visible = false;
                 LoginValidationLabel.Visible = false;
+                CorrectValidationLabel.Visible = true; */
 
                 SqlCommand command = new SqlCommand("Insert into Users values ('"
                 + firstName + "','" + lastName + "','" + login + "','" + password + "','" + 0 + "')", connection);
@@ -47,36 +56,42 @@ namespace OnlineShop
                 connection.Close();
                 Page.Response.Redirect(Page.Request.Url.ToString(), true);
             }
-            else if (!passwordValidation)
+            if (passwordValidation)
             {
                 PasswordValidationLabel.Text = "Hasło musi zawierać przynajmniej jedną cyfrę oraz jedną dużą literę";
                 PasswordValidationLabel.Visible = true;
             }
-            else if (lengthOfLogin > 50)
+            if (lengthOfLogin > 50)
             {
                 LoginValidationLabel.Text = "Długość loginu nie może być większa niż 50";
                 LoginValidationLabel.Visible = true;
             }
-            else if(firstNameIsEmpty)
+            if(firstNameIsEmpty)
             {
                 ImieValidationLabel.Text = "Pole imię nie może pozostać puste";
                 ImieValidationLabel.Visible = true;
             }
-            else if(lastNameIsEmpty)
+            if(lastNameIsEmpty)
             {
                 NazwiskoValidationLabel.Text = "Pole nazwisko nie może pozostać puste";
                 NazwiskoValidationLabel.Visible = true;
             }
-            else if(loginIsEmpty)
+            if(loginIsEmpty)
             {
                 LoginValidationLabel.Text = "Pole login nie może pozostać puste";
                 LoginValidationLabel.Visible = true;
             }
-            else if(passwordIsEmpty)
+            if(passwordIsEmpty)
             {
                 PasswordValidationLabel.Text = "Pole hasło nie może pozostać puste";
                 PasswordValidationLabel.Visible = true;
             }
+
+
+            ImieTextbox.Text = "";
+            NazwiskoTextbox.Text = "";
+            LoginTextbox.Text = "";
+            PasswordTextbox.Text = "";
         }
     }
 }

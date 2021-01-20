@@ -141,6 +141,15 @@ namespace OnlineShop
         protected global::System.Web.UI.WebControls.Label PasswordValidationLabel;
 
         /// <summary>
+        /// Kontrolka CorrectValidationLabel.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CorrectValidationLabel;
+
+        /// <summary>
         /// Kontrolka RegistrationButton.
         /// </summary>
         /// <remarks>
