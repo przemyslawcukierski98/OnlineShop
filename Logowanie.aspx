@@ -16,7 +16,7 @@
         <asp:Label ID="PasswordLabel" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Hasło użytkownika:"></asp:Label>
         <br />
         <br />
-        <asp:TextBox ID="PasswordTextbox" runat="server" Height="35px" Width="350px"></asp:TextBox>
+        <asp:TextBox ID="PasswordTextbox" runat="server" Height="35px" Width="350px" TextMode="Password"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="PasswordValidationLabel" runat="server" ForeColor="Red" Text="Login lub hasło użytkownika są nieprawidłowe" Visible="False"></asp:Label>

@@ -45,46 +45,50 @@ namespace OnlineShop
             if (passwordValidation && lengthOfLogin < 50 && !firstNameIsEmpty && !lastNameIsEmpty 
                 && !loginIsEmpty && !passwordIsEmpty)
             {
-                /* PasswordValidationLabel.Visible = false;
-                LoginValidationLabel.Visible = false;
-                CorrectValidationLabel.Visible = true; */
-
                 SqlCommand command = new SqlCommand("Insert into Users values ('"
                 + firstName + "','" + lastName + "','" + login + "','" + password + "','" + 0 + "')", connection);
 
                 command.ExecuteNonQuery();
                 connection.Close();
                 Page.Response.Redirect(Page.Request.Url.ToString(), true);
+
+                CorrectValidationLabel.Visible = true;
             }
             if (passwordValidation)
             {
                 PasswordValidationLabel.Text = "Hasło musi zawierać przynajmniej jedną cyfrę oraz jedną dużą literę";
                 PasswordValidationLabel.Visible = true;
+                CorrectValidationLabel.Visible = false;
             }
             if (lengthOfLogin > 50)
             {
                 LoginValidationLabel.Text = "Długość loginu nie może być większa niż 50";
                 LoginValidationLabel.Visible = true;
+                CorrectValidationLabel.Visible = false;
             }
             if(firstNameIsEmpty)
             {
                 ImieValidationLabel.Text = "Pole imię nie może pozostać puste";
                 ImieValidationLabel.Visible = true;
+                CorrectValidationLabel.Visible = false;
             }
             if(lastNameIsEmpty)
             {
                 NazwiskoValidationLabel.Text = "Pole nazwisko nie może pozostać puste";
                 NazwiskoValidationLabel.Visible = true;
+                CorrectValidationLabel.Visible = false;
             }
             if(loginIsEmpty)
             {
                 LoginValidationLabel.Text = "Pole login nie może pozostać puste";
                 LoginValidationLabel.Visible = true;
+                CorrectValidationLabel.Visible = false;
             }
             if(passwordIsEmpty)
             {
                 PasswordValidationLabel.Text = "Pole hasło nie może pozostać puste";
                 PasswordValidationLabel.Visible = true;
+                CorrectValidationLabel.Visible = false;
             }
 
 
