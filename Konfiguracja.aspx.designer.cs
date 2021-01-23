@@ -78,13 +78,13 @@ namespace OnlineShop
         protected global::System.Web.UI.WebControls.Label ZarzadzanieProduktamiTitle;
 
         /// <summary>
-        /// Kontrolka GridView1.
+        /// Kontrolka ProductsDetailsView.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.DetailsView ProductsDetailsView;
 
         /// <summary>
         /// Kontrolka ZarzadzanieKategoriamiTitle.
@@ -96,13 +96,13 @@ namespace OnlineShop
         protected global::System.Web.UI.WebControls.Label ZarzadzanieKategoriamiTitle;
 
         /// <summary>
-        /// Kontrolka GridView2.
+        /// Kontrolka DetailsView1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
 
         /// <summary>
         /// Kontrolka ZarzadzanieUzytkownikamiTitle.
@@ -114,13 +114,13 @@ namespace OnlineShop
         protected global::System.Web.UI.WebControls.Label ZarzadzanieUzytkownikamiTitle;
 
         /// <summary>
-        /// Kontrolka GridView3.
+        /// Kontrolka DetailsView2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView3;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsView2;
 
         /// <summary>
         /// Kontrolka FooterPanel.

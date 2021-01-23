@@ -17,9 +17,7 @@ namespace OnlineShop
         SqlDataReader dataReader = null;
 
         protected void Page_Load(object sender, EventArgs e)
-        {
-            if ((int)Session["Zalogowano"] == 0) Response.Redirect("Logowanie.aspx");
-
+        { 
             if (!Page.IsPostBack)
             {
                 connection.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ToString();
