@@ -50,7 +50,7 @@
         <asp:GridView ID="ProductsGridView" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" DataKeyNames="ProductId" DataSourceID="SqlDataSource1" GridLines="None" style="margin-right: 89px" Width="1383px" OnSelectedIndexChanged="ProductsGridView_SelectedIndexChanged">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="ProductId" HeaderText="ID produktu" ReadOnly="True" SortExpression="ProductId" />
+                <asp:BoundField DataField="ProductId" HeaderText="ID produktu" ReadOnly="True" SortExpression="ProductId" Visible="False" />
                 <asp:BoundField DataField="Name" HeaderText="Nazwa" SortExpression="Name" />
                 <asp:BoundField DataField="Price" HeaderText="Cena" SortExpression="Price" />
                 <asp:BoundField DataField="Descirption" HeaderText="Opis produktu" SortExpression="Descirption" />

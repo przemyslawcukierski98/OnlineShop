@@ -78,7 +78,7 @@
             <EditRowStyle BackColor="#2461BF" />
             <FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
             <Fields>
-                <asp:BoundField DataField="ProductId" HeaderText="ID produktu" ReadOnly="True" SortExpression="ProductId" />
+                <asp:BoundField DataField="ProductId" HeaderText="ID produktu" ReadOnly="True" SortExpression="ProductId" Visible="False" />
                 <asp:BoundField DataField="Name" HeaderText="Nazwa produktu" SortExpression="Name" />
                 <asp:BoundField DataField="Price" HeaderText="Cena produktu" SortExpression="Price" />
                 <asp:BoundField DataField="Descirption" HeaderText="Opis produktu" SortExpression="Descirption" />
@@ -96,13 +96,13 @@
         <asp:Label ID="ZarzadzanieKategoriamiTitle" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="X-Large" Text="Zarządzanie kategoriami"></asp:Label>
         <br />
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" CellPadding="4" DataKeyNames="GroupId" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="323px" Width="651px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" CellPadding="4" DataKeyNames="GroupId" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Height="229px" Width="655px">
             <AlternatingRowStyle BackColor="White" />
             <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
             <EditRowStyle BackColor="#2461BF" />
             <FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
             <Fields>
-                <asp:BoundField DataField="GroupId" HeaderText="ID grupy" ReadOnly="True" SortExpression="GroupId" />
+                <asp:BoundField DataField="GroupId" HeaderText="ID grupy" ReadOnly="True" SortExpression="GroupId" Visible="False" />
                 <asp:BoundField DataField="Name" HeaderText="Nazwa grupy" SortExpression="Name" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
             </Fields>
@@ -123,7 +123,7 @@
             <EditRowStyle BackColor="#2461BF" />
             <FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
             <Fields>
-                <asp:BoundField DataField="Id" HeaderText="ID uzytkownika" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="Id" HeaderText="ID uzytkownika" InsertVisible="False" ReadOnly="True" SortExpression="Id" Visible="False" />
                 <asp:BoundField DataField="Imie" HeaderText="Imię użytkownika" SortExpression="Imie" />
                 <asp:BoundField DataField="Nazwisko" HeaderText="Nazwisko użytkownika" SortExpression="Nazwisko" />
                 <asp:BoundField DataField="Login" HeaderText="Login użytkownika" SortExpression="Login" />

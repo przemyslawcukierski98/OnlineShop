@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="MainPage.aspx.cs" Inherits="OnlineShop.MainPage" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-    <asp:Panel ID="MainPagePanel" runat="server" BackColor="#E8EAE6" Height="600px" HorizontalAlign="Center" style="margin-bottom: 27px">
+    <asp:Panel ID="MainPagePanel" runat="server" BackColor="#E8EAE6" Height="900px" HorizontalAlign="Center" style="margin-bottom: 27px">
     <br />
     <asp:Label ID="StronaGlownaTitle" runat="server" Font-Bold="True" Font-Names="Gabriola" Font-Size="XX-Large" Text="Strona główna"></asp:Label>
     <br />
@@ -14,6 +14,8 @@
     <br />
     <asp:Image ID="ImageView" runat="server" Height="263px" ImageUrl="~/Images/logo.png" Width="262px" />
 
+        <br />
+        <br />
         <br />
     </asp:Panel>
 
