@@ -72,7 +72,7 @@
         <br />
         <br />
         <br />
-        <asp:DetailsView ID="ProductsDetailsView" runat="server" AllowPaging="True" AutoGenerateRows="False" CellPadding="4" DataKeyNames="ProductId" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" Height="438px" Width="656px">
+        &nbsp;<asp:DetailsView ID="ProductsDetailsView" runat="server" AllowPaging="True" AutoGenerateRows="False" CellPadding="4" DataKeyNames="ProductId" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" Height="438px" Width="656px">
             <AlternatingRowStyle BackColor="White" />
             <CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
             <EditRowStyle BackColor="#2461BF" />

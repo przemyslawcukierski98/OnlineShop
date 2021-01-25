@@ -13,7 +13,9 @@
     <br />
     <br />
     <asp:Image ID="ImageView" runat="server" Height="263px" ImageUrl="~/Images/logo.png" Width="262px" />
-</asp:Panel>
+
+        <br />
+    </asp:Panel>
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">

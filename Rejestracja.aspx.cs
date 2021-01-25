@@ -21,6 +21,7 @@ namespace OnlineShop
 
         protected void RegistrationButton_Click(object sender, EventArgs e)
         {
+            bool flag = false;
             string firstName = ImieTextbox.Text;
             string lastName = NazwiskoTextbox.Text;
             string login = LoginTextbox.Text;
@@ -40,19 +41,19 @@ namespace OnlineShop
             PasswordValidationLabel.Visible = false;
             LoginValidationLabel.Visible = false;
             CorrectValidationLabel.Visible = false;
-            
 
             if (passwordValidation && lengthOfLogin < 50 && !firstNameIsEmpty && !lastNameIsEmpty 
                 && !loginIsEmpty && !passwordIsEmpty)
             {
+                CorrectValidationLabel.Text = "Rejestracja przebiegła pomyślnie!";
+                CorrectValidationLabel.Visible = true;
+
                 SqlCommand command = new SqlCommand("Insert into Users values ('"
                 + firstName + "','" + lastName + "','" + login + "','" + password + "','" + 0 + "')", connection);
 
                 command.ExecuteNonQuery();
                 connection.Close();
                 Page.Response.Redirect(Page.Request.Url.ToString(), true);
-
-                CorrectValidationLabel.Visible = true;
             }
             if (passwordValidation)
             {
